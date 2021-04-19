@@ -1,0 +1,7 @@
+<div class="container">
+    <img src="{{card.imageUrl}}" alt="">
+
+    <h2 class="title">{{card.title}}</h2>
+    <h2 class="rating" [hidden]="rating">{{card.stars}}</h2>
+    <button class="select" [hidden]="!rating" (click)="btnClick()">Select</button>
+</div>
